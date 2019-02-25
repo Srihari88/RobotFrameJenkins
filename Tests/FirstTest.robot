@@ -7,7 +7,22 @@ Test Setup      Log    I'm insdie the testcase
 Test Teardown   Log    I'm going outside the testcase
 
 *** Test Cases ***
-Test Case:1 Login valid User
+Test:1 Verify Invalid Username & Password
+    Open Browser and navigate to URL
+    Enter Invalid Username and Correct Password
+    Clear Fields
+    log to console  All Emepments Cleared.
+Test:2 Verify Invalid Username & Empty Pwd
+    Enter Invalid Username and Empty Password
+    Clear Fields
+Test:3 Verify Valid Username & Invalid Pwd
+    Enter Valid Username and Invalid Password
+    Clear Fields
+Test:4 Verify Valid Username & Empty
+    Enter Valid Username and Empty Password
+    Clear Fields
+
+Test 5: Login valid User
     Open Browser and navigate to URL
     Enter Correct Username ans password
     ${BeforeLoginTitle}  Get Title
@@ -17,7 +32,7 @@ Test Case:1 Login valid User
     ${BeforeLoginTitle}=  Get Title
     log  ${BeforeLoginTitle}
 
-Test Case:2 Add a User
+Test 6: Add a User
     Add User
     ${CurrentURL}=  Get Location
     log  ${CurrentURL}
@@ -26,7 +41,7 @@ Test Case:2 Add a User
     sleep           ${Speep}
     sleep           ${Speep}
 
-Movie Mouse Over 3
+Test 7:Movie Mouse Over
 
      MouseHover into Jobs
      log to console     Mouse hover into Jobs
@@ -34,17 +49,51 @@ Movie Mouse Over 3
 ListOf Itmes in the header
      log to console   ${StringItems}
 
-Test Case:4 Logout A user
+Test 9: Logout A user
     Logout
     log to console  User Logged out Successuflly
 
-Test Case:5 Close browser
+
+Test 10: Close browser
     Close Browser
 
 
+
 *** Keywords ***
+
 Open Browser and navigate to URL
     open browser  ${URL}  ${Browser}
+
+
+Enter Invalid Username and Correct Password
+    input text        ${UserName}     Admin3
+    input text        ${Password}     admin123
+    click button      ${Submit}
+    ${oh}=  Get Text  ${ValidationText}
+    log to console    ${oh}
+
+Enter Invalid Username and Empty Password
+    input text        ${UserName}     Admin3
+    input text        ${Password}     ${EMPTY}
+    click button      ${Submit}
+    ${oh}=  Get Text  ${ValidationText}
+    log to console    ${oh}
+
+
+Enter Valid Username and Invalid Password
+    input text        ${UserName}     Admin
+    input text        ${Password}     admin123345
+    click button      ${Submit}
+    ${oh}=  Get Text  ${ValidationText}
+    log to console    ${oh}
+
+
+Enter Valid Username and Empty Password
+    input text        ${UserName}     Admin
+    input text        ${Password}     ${EMPTY}
+    click button      ${Submit}
+    ${oh}=  Get Text  ${ValidationText}
+    log to console    ${oh}
 
 Enter Correct Username ans password
     input text        ${UserName}     Admin
@@ -75,6 +124,7 @@ MouseHover into Jobs
 
 
 *** Variables ***
+
 # Environment Setup,Chrome & URL setup
 ${URL}                  https://opensource-demo.orangehrmlive.com
 ${Browser}              Chrome
@@ -88,6 +138,8 @@ ${ClickLogouttext}      xpath=//a[contains(text(),'Welcome Admin')]
 ${logout}               xpath=//a[@href='/index.php/auth/logout']
 
 ${Speep}                3
+
+${ValidationText}       xpath=//span[@id='spanMessage']
 
 #Add an user
 
@@ -108,8 +160,15 @@ ${StringItems}      xpath=//div[@class='menu']/ul/li
 
 ${JobsHover}        //a[@id='menu_admin_Job']
 
+${PageData}         xpath=//form[@name='frmList_ohrmListComponent']
 
 
+
+
+#Delete the User
+
+${Deleteuser}       xpath=//input[@name='chkSelectRow[]' and @value='11']
+${UserDeleteButton}     xpath=//input[@id='btnDelete']
 
 
 

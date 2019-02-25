@@ -23,12 +23,23 @@ Test Case:2 Add a User
     log  ${CurrentURL}
     sleep           ${Speep}
     log to console  User added successfully
-Test Case:3 Logout A user
+    sleep           ${Speep}
+    sleep           ${Speep}
+
+Movie Mouse Over 3
+
+     MouseHover into Jobs
+     log to console     Mouse hover into Jobs
+
+ListOf Itmes in the header
+     log to console   ${StringItems}
+
+Test Case:4 Logout A user
     Logout
     log to console  User Logged out Successuflly
-Test Case:4 Close browser
+
+Test Case:5 Close browser
     Close Browser
-    Running For Loop
 
 
 *** Keywords ***
@@ -59,12 +70,8 @@ Add User
     input password    ${User_con_pass}             Naidusri
     click button      ${SaveUser}
 
-Running For Loop
-    |@{StringItems}|
-    |FOR    ${Item}|    IN    |@{StringItems}|
-     |   var:  ${Item}|
-    |Log    |Item iteration is over|
-
+MouseHover into Jobs
+    Mouse Over      ${JobsHover}
 
 
 *** Variables ***
@@ -97,7 +104,9 @@ ${SaveUser}         xpath=//input[@id='btnSave']
 
 #Log the titles for the webpage.
 
-@{StringItems}      xpath=//div[@class='menu']/ul/li
+${StringItems}      xpath=//div[@class='menu']/ul/li
+
+${JobsHover}        //a[@id='menu_admin_Job']
 
 
 

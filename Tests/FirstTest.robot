@@ -12,25 +12,33 @@ Test:1 Verify Invalid Username & Password
     Enter Invalid Username and Correct Password
     Clear Fields
     log to console  All Emepments Cleared.
+
 Test:2 Verify Invalid Username & Empty Pwd
     Enter Invalid Username and Empty Password
     Clear Fields
+
 Test:3 Verify Valid Username & Invalid Pwd
     Enter Valid Username and Invalid Password
     Clear Fields
+
 Test:4 Verify Valid Username & Empty
     Enter Valid Username and Empty Password
     Clear Fields
 
 Test 5: Login valid User
-    Open Browser and navigate to URL
     Enter Correct Username ans password
     ${BeforeLoginTitle}  Get Title
     log to console  Logged in successfully
     sleep           ${Speep}
-    log to console  User Created sucessfully.
+#    Element Text Should Be  ${AssingLeaveText}  Assign Leave
+#    Element Text Should Be  ${LeaveList}        Leave List
+#    Element Text Should Be  ${Timessheet}       Timesheets
     ${BeforeLoginTitle}=  Get Title
-    log  ${BeforeLoginTitle}
+    log to console  ${BeforeLoginTitle}
+    sleep           ${Speep}
+
+Assing Leave to the employee
+     Assin Leave Page
 
 Test 6: Add a User
     Add User
@@ -46,16 +54,11 @@ Test 7:Movie Mouse Over
      MouseHover into Jobs
      log to console     Mouse hover into Jobs
 
-ListOf Itmes in the header
-     log to console   ${StringItems}
-
 Test 9: Logout A user
     Logout
     log to console  User Logged out Successuflly
-
-
-Test 10: Close browser
     Close Browser
+
 
 
 
@@ -123,6 +126,35 @@ MouseHover into Jobs
     Mouse Over      ${JobsHover}
 
 
+Page data to print
+    ${PageData}=  Element Text Should Be
+
+    log to console      ${PageData}
+
+
+Clear Fields
+    Clear Element Text   ${UserName}
+    Clear Element Text   ${Password}
+
+Assin Leave Page
+    Click Image   ${AddAsingLeave}
+    sleep         ${Speep}
+    input text    ${EmployeeNameAssign}   Linda Anderson
+    Select From List By Index  ${LeaveType}     3
+    click link     ${From Date}
+    click link     ${SelectSpacificDate}
+    click link     ${To Date}
+    click link     ${SelectParticalDate}
+    input text     ${Comment}   Kindly requesting you for the leave
+    click button   ${Assing}
+    Alert Should Be Present  ${AcceptOk}
+
+
+
+
+
+
+
 *** Variables ***
 
 # Environment Setup,Chrome & URL setup
@@ -169,6 +201,29 @@ ${PageData}         xpath=//form[@name='frmList_ohrmListComponent']
 
 ${Deleteuser}       xpath=//input[@name='chkSelectRow[]' and @value='11']
 ${UserDeleteButton}     xpath=//input[@id='btnDelete']
+
+
+#Dashboard Page Elements
+
+${AssingLeaveText}      xpath=//span[contains(text(),'Assign Leave')]
+${LeaveList}            xpath=//span[contains(text(),'Leave List')]
+${Timessheet}           xpath=//span[contains(text(),'Timesheets')]
+
+
+#Assing a Leave
+${AddAsingLeave}       xpath=//img[@src='/webres_5bd6ae3dc0fea0.31921995/orangehrmLeavePlugin/images/ApplyLeave.png']
+${EmployeeNameAssign}        xpath=//input[@id='assignleave_txtEmployee_empName']
+${LeaveType}           xpath=//select[@id='assignleave_txtLeaveType']
+${LeaveBalance}
+${From Date}           xpath=//input[@id='assignleave_txtFromDate']
+${SelectSpacificDate}  xpath=//a[contains(text(),'27')]
+${To Date}             xpath=//input[@name='assignleave[txtToDate]']
+${SelectParticalDate}  xpath=//a[contains(text(),'28')]
+${Comment}             xpath=//textarea[@id='assignleave_txtComment']
+${Assing}              xpath=//input[@id='assignBtn']
+
+${AcceptOk}            xpath=//input[@id='confirmOkButton']
+
 
 
 

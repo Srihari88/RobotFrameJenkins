@@ -7,7 +7,6 @@ Resource          ../KeywordsFile/KeywordsPage.robot
 
 
 
-
 Suite Setup     Log    Open Browser and navigate to URL SetUp
 Suite Teardown  Log    Open Browser and navigate to URL
 Test Setup      Log    I'm insdie the testcase
@@ -21,20 +20,12 @@ Invalid Username & Password
     Enter Invalid Username and Correct Password
     Clear Fields
     log to console  All Emepments Cleared.
-
-Invalid Username & Empty Pwd
     Enter Invalid Username and Empty Password
     Clear Fields
-
-Valid Username & Invalid Pwd
     Enter Valid Username and Invalid Password
     Clear Fields
-
-Valid Username & Empty
     Enter Valid Username and Empty Password
     Clear Fields
-
-Valid Login User
     Enter Correct Username ans password
     ${BeforeLoginTitle}  Get Title
     log to console  Logged in successfully
@@ -47,14 +38,14 @@ Valid Login User
     sleep           ${Speep}
 
 
-Add Cookies to Browser
-    ${Cookies}=     Get Cookies
-    log to console      ${Cookies}
-
-Get Cookies As Dict
-    ${cookies}=    Get Cookies        as_dict=True
-    ${expected_cookies}=    Create Dictionary   test=seleniumlibrary    another=value
-    log to console      ${cookies}
+#Add Cookies to Browser
+#    ${Cookies}=     Get Cookies
+#    log to console      ${Cookies}
+#
+#Get Cookies As Dict
+#    ${cookies}=    Get Cookies        as_dict=True
+#    ${expected_cookies}=    Create Dictionary   test=seleniumlibrary    another=value
+#    log to console      ${cookies}
 
 #Add Cookie When Secure Is False
 #    Add Cookie    Cookie1    value1    secure=True
@@ -83,20 +74,7 @@ Maintence Page Checking
     Verify Maintence page
 
 
-
 All links on the Page
     ${AllLInks}=    Get All Links
     log to console      ${AllLInks}
-
-Logout A user
-    Logout
-    log to console  User Logged out Successuflly
-    Close Browser
-
-
-
-
-
-
-
 

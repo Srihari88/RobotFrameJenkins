@@ -61,9 +61,13 @@ ${AddAsingLeave}       xpath=//img[@src='/webres_5bd6ae3dc0fea0.31921995/orangeh
 ${EmployeeNameAssign}  xpath=//input[@id='assignleave_txtEmployee_empName']
 ${LeaveType}           xpath=//select[@id='assignleave_txtLeaveType']
 ${LeaveBalance}        xpath=//a[@id='leaveBalance_details_link']
-${From Date}           xpath= //input[@id='assignleave_txtToDate']
-${SelectSpacificDate}  xpath=//a[contains(text(),'16')]
+
+
+${From Date}           xpath=//fieldset/ol/li[4]/input[@id='assignleave_txtFromDate']
+${SelectSpacificDate}  xpath=//*[@id='ui-datepicker-div']/table/tbody/tr[5]/td[1]/a
 ${To Date}             xpath=//input[@id='assignleave_txtToDate']
+
+
 ${SelectParticalDate}  xpath=//a[contains(text(),'23')]
 ${Comment}             xpath=//textarea[@id='assignleave_txtComment']
 ${Assing}              xpath=//input[@id='assignBtn']

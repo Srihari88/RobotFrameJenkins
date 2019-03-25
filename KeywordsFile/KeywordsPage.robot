@@ -7,7 +7,6 @@ Resource  ../Varibles/resourceslib.robot
 Open Browser and navigate to URL
     open browser  ${URL}  ${Browser}
 
-
 Enter Invalid Username and Correct Password
     input text        ${UserName}     Admin3
     input text        ${Password}     admin123

@@ -6,7 +6,7 @@ Resource          ..//Varibles/resourceslib.robot
 Library           SeleniumLibrary
 Resource          ../KeywordsFile/KeywordsPage.robot
 Resource          ../KeywordsFile/Dashboardpage.robot
-
+Resource          ../Varibles/resourceslib.robot
 
 *** Test Cases ***
 Valid Login User

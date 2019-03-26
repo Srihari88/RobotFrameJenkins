@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.2 on darwin)" generated="20190326 23:34:47.508" rpa="false">
+<suite id="s1" name="MainPage" source="/Users/reenupanwar/PycharmProjects/RobotFrameJenkins/Tests/MainPage.robot">
+<test id="s1-t1" name="Invalid Username &amp; Password">
+<kw name="Open Browser and navigate to URL" library="KeywordsPage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190326 23:34:48.008" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com'.</msg>
+<status status="PASS" starttime="20190326 23:34:48.006" endtime="20190326 23:34:56.099"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:48.005" endtime="20190326 23:34:56.100"></status>
+</kw>
+<kw name="Enter Invalid Username and Correct Password" library="KeywordsPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+<arg>Admin3</arg>
+</arguments>
+<msg timestamp="20190326 23:34:56.105" level="INFO">Typing text 'Admin3' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20190326 23:34:56.104" endtime="20190326 23:34:56.323"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20190326 23:34:56.324" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20190326 23:34:56.323" endtime="20190326 23:34:56.493"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Submit}</arg>
+</arguments>
+<msg timestamp="20190326 23:34:56.495" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20190326 23:34:56.494" endtime="20190326 23:34:57.424"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${ValidationText}</arg>
+</arguments>
+<assign>
+<var>${oh}</var>
+</assign>
+<msg timestamp="20190326 23:34:57.479" level="INFO">${oh} = Invalid credentials</msg>
+<status status="PASS" starttime="20190326 23:34:57.425" endtime="20190326 23:34:57.479"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${oh}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:57.480" endtime="20190326 23:34:57.481"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:56.101" endtime="20190326 23:34:57.482"></status>
+</kw>
+<kw name="Clear Fields" library="KeywordsPage">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:57.484" endtime="20190326 23:34:57.539"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:57.540" endtime="20190326 23:34:57.578"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:57.483" endtime="20190326 23:34:57.579"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>All Emepments Cleared.</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:57.581" endtime="20190326 23:34:57.583"></status>
+</kw>
+<kw name="Enter Invalid Username and Empty Password" library="KeywordsPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+<arg>Admin3</arg>
+</arguments>
+<msg timestamp="20190326 23:34:57.586" level="INFO">Typing text 'Admin3' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20190326 23:34:57.585" endtime="20190326 23:34:57.733"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20190326 23:34:57.736" level="INFO">Typing text '' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20190326 23:34:57.734" endtime="20190326 23:34:57.825"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Submit}</arg>
+</arguments>
+<msg timestamp="20190326 23:34:57.827" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20190326 23:34:57.825" endtime="20190326 23:34:57.927"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${ValidationText}</arg>
+</arguments>
+<assign>
+<var>${oh}</var>
+</assign>
+<msg timestamp="20190326 23:34:57.956" level="INFO">${oh} = Password cannot be empty</msg>
+<status status="PASS" starttime="20190326 23:34:57.928" endtime="20190326 23:34:57.956"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${oh}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:57.957" endtime="20190326 23:34:57.959"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:57.584" endtime="20190326 23:34:57.959"></status>
+</kw>
+<kw name="Clear Fields" library="KeywordsPage">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:57.961" endtime="20190326 23:34:57.997"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:57.997" endtime="20190326 23:34:58.027"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:57.960" endtime="20190326 23:34:58.027"></status>
+</kw>
+<kw name="Enter Valid Username and Invalid Password" library="KeywordsPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20190326 23:34:58.029" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20190326 23:34:58.028" endtime="20190326 23:34:58.148"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+<arg>admin123345</arg>
+</arguments>
+<msg timestamp="20190326 23:34:58.149" level="INFO">Typing text 'admin123345' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20190326 23:34:58.148" endtime="20190326 23:34:58.296"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Submit}</arg>
+</arguments>
+<msg timestamp="20190326 23:34:58.298" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20190326 23:34:58.297" endtime="20190326 23:34:59.072"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${ValidationText}</arg>
+</arguments>
+<assign>
+<var>${oh}</var>
+</assign>
+<msg timestamp="20190326 23:34:59.125" level="INFO">${oh} = Invalid credentials</msg>
+<status status="PASS" starttime="20190326 23:34:59.072" endtime="20190326 23:34:59.126"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${oh}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:59.127" endtime="20190326 23:34:59.128"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:58.028" endtime="20190326 23:34:59.129"></status>
+</kw>
+<kw name="Clear Fields" library="KeywordsPage">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:59.131" endtime="20190326 23:34:59.176"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:59.176" endtime="20190326 23:34:59.213"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:59.130" endtime="20190326 23:34:59.213"></status>
+</kw>
+<kw name="Enter Valid Username and Empty Password" library="KeywordsPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20190326 23:34:59.214" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20190326 23:34:59.214" endtime="20190326 23:34:59.327"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20190326 23:34:59.328" level="INFO">Typing text '' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20190326 23:34:59.328" endtime="20190326 23:34:59.411"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Submit}</arg>
+</arguments>
+<msg timestamp="20190326 23:34:59.412" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20190326 23:34:59.412" endtime="20190326 23:34:59.501"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${ValidationText}</arg>
+</arguments>
+<assign>
+<var>${oh}</var>
+</assign>
+<msg timestamp="20190326 23:34:59.526" level="INFO">${oh} = Password cannot be empty</msg>
+<status status="PASS" starttime="20190326 23:34:59.502" endtime="20190326 23:34:59.527"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${oh}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:59.528" endtime="20190326 23:34:59.530"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:59.214" endtime="20190326 23:34:59.532"></status>
+</kw>
+<kw name="Clear Fields" library="KeywordsPage">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:59.536" endtime="20190326 23:34:59.575"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:34:59.576" endtime="20190326 23:34:59.606"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:59.533" endtime="20190326 23:34:59.607"></status>
+</kw>
+<kw name="Enter Correct Username ans password" library="KeywordsPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20190326 23:34:59.609" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20190326 23:34:59.609" endtime="20190326 23:34:59.712"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20190326 23:34:59.713" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20190326 23:34:59.712" endtime="20190326 23:34:59.824"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Submit}</arg>
+</arguments>
+<msg timestamp="20190326 23:34:59.825" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20190326 23:34:59.825" endtime="20190326 23:35:04.413"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:59.608" endtime="20190326 23:35:04.414"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${BeforeLoginTitle}</var>
+</assign>
+<msg timestamp="20190326 23:35:04.433" level="INFO">${BeforeLoginTitle} = OrangeHRM</msg>
+<status status="PASS" starttime="20190326 23:35:04.415" endtime="20190326 23:35:04.433"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Logged in successfully</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:04.435" endtime="20190326 23:35:04.437"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Speep}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:10.439" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:04.438" endtime="20190326 23:35:10.439"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${URL_AfterLogin}</var>
+</assign>
+<msg timestamp="20190326 23:35:10.448" level="INFO">${URL_AfterLogin} = https://opensource-demo.orangehrmlive.com/index.php/dashboard</msg>
+<status status="PASS" starttime="20190326 23:35:10.440" endtime="20190326 23:35:10.448"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${URL_AfterLogin}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:10.448" endtime="20190326 23:35:10.449"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:34:48.003" endtime="20190326 23:35:10.449" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Press Logout on main page">
+<kw name="Click Logout Option">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ClickLogouttext}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:10.455" level="INFO">Clicking element 'xpath=//a[contains(text(),'Welcome Admin')]'.</msg>
+<status status="PASS" starttime="20190326 23:35:10.454" endtime="20190326 23:35:10.564"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:10.453" endtime="20190326 23:35:10.564"></status>
+</kw>
+<kw name="About Option">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${About}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:10.567" level="INFO">Clicking element 'xpath=//a[@id='aboutDisplayLink']'.</msg>
+<status status="PASS" starttime="20190326 23:35:10.567" endtime="20190326 23:35:10.733"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:10.565" endtime="20190326 23:35:10.734"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${About_content}</arg>
+</arguments>
+<assign>
+<var>${text_about}</var>
+</assign>
+<msg timestamp="20190326 23:35:11.088" level="INFO">${text_about} = Company Name: OrangeHRM (Pvt) Ltd
+Version: Orangehrm OS 4.2
+Active Employees: 26
+Employees Terminated: 0</msg>
+<status status="PASS" starttime="20190326 23:35:10.734" endtime="20190326 23:35:11.090"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${text_about}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.091" endtime="20190326 23:35:11.092"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${close_window}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:11.106" level="INFO">Clicking element 'xpath=//a[@class='close']'.</msg>
+<status status="PASS" starttime="20190326 23:35:11.103" endtime="20190326 23:35:11.314"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${curlink}</var>
+</assign>
+<msg timestamp="20190326 23:35:11.324" level="INFO">${curlink} = https://opensource-demo.orangehrmlive.com/index.php/dashboard#</msg>
+<status status="PASS" starttime="20190326 23:35:11.315" endtime="20190326 23:35:11.324"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${curlink}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.324" endtime="20190326 23:35:11.325"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:10.452" endtime="20190326 23:35:11.325" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Top Header menu option">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>Admin</arg>
+<arg>PIM</arg>
+<arg>Leave</arg>
+<arg>Time</arg>
+<arg>Recruitment</arg>
+<arg>Performance</arg>
+<arg>Dashboard</arg>
+<arg>Directory</arg>
+<arg>Maintenance</arg>
+</arguments>
+<assign>
+<var>@{Head}</var>
+</assign>
+<msg timestamp="20190326 23:35:11.332" level="INFO">@{Head} = [ Admin | PIM | Leave | Time | Recruitment | Performance | Dashboard | Directory | Maintenance ]</msg>
+<status status="PASS" starttime="20190326 23:35:11.330" endtime="20190326 23:35:11.332"></status>
+</kw>
+<kw name="${Values} IN [ @{Head} ]" type="for">
+<kw name="${Values} = Admin" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Values}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.336" endtime="20190326 23:35:11.337"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.335" endtime="20190326 23:35:11.337"></status>
+</kw>
+<kw name="${Values} = PIM" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Values}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.338" endtime="20190326 23:35:11.339"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.338" endtime="20190326 23:35:11.339"></status>
+</kw>
+<kw name="${Values} = Leave" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Values}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.340" endtime="20190326 23:35:11.341"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.339" endtime="20190326 23:35:11.341"></status>
+</kw>
+<kw name="${Values} = Time" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Values}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.342" endtime="20190326 23:35:11.343"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.341" endtime="20190326 23:35:11.343"></status>
+</kw>
+<kw name="${Values} = Recruitment" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Values}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.346" endtime="20190326 23:35:11.347"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.343" endtime="20190326 23:35:11.347"></status>
+</kw>
+<kw name="${Values} = Performance" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Values}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.348" endtime="20190326 23:35:11.349"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.348" endtime="20190326 23:35:11.350"></status>
+</kw>
+<kw name="${Values} = Dashboard" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Values}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.351" endtime="20190326 23:35:11.353"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.350" endtime="20190326 23:35:11.353"></status>
+</kw>
+<kw name="${Values} = Directory" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Values}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.353" endtime="20190326 23:35:11.354"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.353" endtime="20190326 23:35:11.354"></status>
+</kw>
+<kw name="${Values} = Maintenance" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Values}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.358" endtime="20190326 23:35:11.364"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.356" endtime="20190326 23:35:11.364"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.334" endtime="20190326 23:35:11.364"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${curlinkdf}</var>
+</assign>
+<msg timestamp="20190326 23:35:11.390" level="INFO">${curlinkdf} = https://opensource-demo.orangehrmlive.com/index.php/dashboard#</msg>
+<status status="PASS" starttime="20190326 23:35:11.365" endtime="20190326 23:35:11.391"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${curlinkdf}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.392" endtime="20190326 23:35:11.393"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.328" endtime="20190326 23:35:11.395" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Legends option">
+<kw name="Main Pages Legends">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Ledends}</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20190326 23:35:11.502" level="INFO">${a} = Legend
+Not assigned to Subunits
+Administration
+Finance
+IT
+Sales</msg>
+<status status="PASS" starttime="20190326 23:35:11.398" endtime="20190326 23:35:11.502"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${a}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.502" endtime="20190326 23:35:11.504"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.397" endtime="20190326 23:35:11.507"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${SubunitDetails}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:11.509" level="INFO">Simulating Mouse Over on element 'xpath=//fieldset[@id='panel_resizable_1_0']'.</msg>
+<status status="PASS" starttime="20190326 23:35:11.508" endtime="20190326 23:35:11.598"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${SubunitDetails}</arg>
+</arguments>
+<assign>
+<var>${b}</var>
+</assign>
+<msg timestamp="20190326 23:35:11.690" level="INFO">${b} = Employee Distribution by Subunit
+65%
+12%
+
+Not assigned to Subunits: 17 Employee(s) (65.38%)</msg>
+<status status="PASS" starttime="20190326 23:35:11.599" endtime="20190326 23:35:11.690"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${b}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.691" endtime="20190326 23:35:11.692"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${curlink123}</var>
+</assign>
+<msg timestamp="20190326 23:35:11.706" level="INFO">${curlink123} = https://opensource-demo.orangehrmlive.com/index.php/dashboard#</msg>
+<status status="PASS" starttime="20190326 23:35:11.693" endtime="20190326 23:35:11.706"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${curlink123}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.707" endtime="20190326 23:35:11.710"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.396" endtime="20190326 23:35:11.716" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Board Dashboard">
+<kw name="Main DB options">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${DBOptions}</arg>
+</arguments>
+<assign>
+<var>${d}</var>
+</assign>
+<msg timestamp="20190326 23:35:11.812" level="INFO">${d} = Quick Launch
+Assign Leave
+Leave List
+Timesheets</msg>
+<status status="PASS" starttime="20190326 23:35:11.722" endtime="20190326 23:35:11.812"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${d}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.813" endtime="20190326 23:35:11.813"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.720" endtime="20190326 23:35:11.814"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${curlink1234}</var>
+</assign>
+<msg timestamp="20190326 23:35:11.831" level="INFO">${curlink1234} = https://opensource-demo.orangehrmlive.com/index.php/dashboard#</msg>
+<status status="PASS" starttime="20190326 23:35:11.815" endtime="20190326 23:35:11.831"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${curlink1234}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:11.832" endtime="20190326 23:35:11.834"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.718" endtime="20190326 23:35:11.835" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Assign Leave">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${AssignLeave}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:11.841" level="INFO">Clicking element 'xpath=//div[@id='dashboard-quick-launch-panel-menu_holder']/table/tbody/tr/td/div/a/img[@src='/webres_5bd6ae3dc0fea0.31921995/orangehrmLeavePlugin/images/ApplyLeave.png']'.</msg>
+<status status="PASS" starttime="20190326 23:35:11.840" endtime="20190326 23:35:13.841"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${e}</var>
+</assign>
+<msg timestamp="20190326 23:35:13.856" level="INFO">${e} = https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave</msg>
+<status status="PASS" starttime="20190326 23:35:13.842" endtime="20190326 23:35:13.856"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${e}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:13.857" endtime="20190326 23:35:13.858"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${curli}</var>
+</assign>
+<msg timestamp="20190326 23:35:13.878" level="INFO">${curli} = https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave</msg>
+<status status="PASS" starttime="20190326 23:35:13.859" endtime="20190326 23:35:13.878"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${curli}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:13.879" endtime="20190326 23:35:13.880"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:11.837" endtime="20190326 23:35:13.880" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Fill Leave assign fourm">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EmployeeNameAssign}</arg>
+<arg>Jasmine Morgan</arg>
+</arguments>
+<msg timestamp="20190326 23:35:13.885" level="INFO">Typing text 'Jasmine Morgan' into text field 'xpath=//input[@id='assignleave_txtEmployee_empName']'.</msg>
+<status status="PASS" starttime="20190326 23:35:13.884" endtime="20190326 23:35:14.295"></status>
+</kw>
+<kw name="Select From List" library="SeleniumLibrary">
+<doc>Deprecated. Use `Select From List By Label/Value/Index` instead.</doc>
+<arguments>
+<arg>${LeaveType}</arg>
+<arg>Vacation US</arg>
+</arguments>
+<msg timestamp="20190326 23:35:14.296" level="INFO">Selecting option(s) 'Vacation US' from list 'xpath=//select[@id='assignleave_txtLeaveType']'.</msg>
+<status status="PASS" starttime="20190326 23:35:14.296" endtime="20190326 23:35:14.484"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20190326 23:35:18.486" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:14.484" endtime="20190326 23:35:18.487"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${LeaveBalance}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:18.489" level="INFO">Clicking element 'xpath=//a[@id='leaveBalance_details_link']'.</msg>
+<status status="PASS" starttime="20190326 23:35:18.488" endtime="20190326 23:35:18.614"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${JobLeaves}</arg>
+</arguments>
+<assign>
+<var>${alrt}</var>
+</assign>
+<msg timestamp="20190326 23:35:18.677" level="INFO">${alrt} = Employee Name
+Jasmine Morgan
+Leave Type
+Vacation US
+As of Date
+2019-03-26</msg>
+<status status="PASS" starttime="20190326 23:35:18.615" endtime="20190326 23:35:18.677"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${alrt}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:18.677" endtime="20190326 23:35:18.679"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${JobLeavesText}</arg>
+</arguments>
+<assign>
+<var>${alert5}</var>
+</assign>
+<msg timestamp="20190326 23:35:18.734" level="INFO">${alert5} = Entitled 0.00
+Taken 0.00
+Scheduled 0.00
+Pending Approval 0.00</msg>
+<status status="PASS" starttime="20190326 23:35:18.680" endtime="20190326 23:35:18.734"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${alert5}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:18.734" endtime="20190326 23:35:18.736"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Close}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:18.738" level="INFO">Clicking element 'xpath=//*[@id="balance_details"]/div[1]/a'.</msg>
+<status status="PASS" starttime="20190326 23:35:18.737" endtime="20190326 23:35:18.843"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Reached to the date</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:18.843" endtime="20190326 23:35:18.845"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20190326 23:35:23.848" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:18.846" endtime="20190326 23:35:23.848"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${From Date}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:23.850" level="INFO">Clicking element 'xpath=//fieldset/ol/li[4]/input[@id='assignleave_txtFromDate']'.</msg>
+<status status="PASS" starttime="20190326 23:35:23.849" endtime="20190326 23:35:24.051"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SelectSpacificDate}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:24.052" level="INFO">Clicking element 'xpath=//*[@id='ui-datepicker-div']/table/tbody/tr[5]/td[1]/a'.</msg>
+<status status="PASS" starttime="20190326 23:35:24.051" endtime="20190326 23:35:24.223"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Comment}</arg>
+<arg>Hello Sri..!!! Welcome to the ORM freetool.</arg>
+</arguments>
+<msg timestamp="20190326 23:35:24.224" level="INFO">Typing text 'Hello Sri..!!! Welcome to the ORM freetool.' into text field 'xpath=//textarea[@id='assignleave_txtComment']'.</msg>
+<status status="PASS" starttime="20190326 23:35:24.224" endtime="20190326 23:35:24.901"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Assing}</arg>
+</arguments>
+<msg timestamp="20190326 23:35:24.904" level="INFO">Clicking element 'xpath=//input[@id='assignBtn']'.</msg>
+<status status="PASS" starttime="20190326 23:35:24.902" endtime="20190326 23:35:26.002"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${curul}</var>
+</assign>
+<msg timestamp="20190326 23:35:26.020" level="INFO">${curul} = https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave</msg>
+<status status="PASS" starttime="20190326 23:35:26.003" endtime="20190326 23:35:26.020"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${curul}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:26.021" endtime="20190326 23:35:26.024"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:13.882" endtime="20190326 23:35:26.026" critical="yes"></status>
+</test>
+<test id="s1-t8" name="Leave Fourm Verification">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_leave_viewLeaveModule']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:26.031" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_leave_viewLeaveModule']'.</msg>
+<status status="PASS" starttime="20190326 23:35:26.030" endtime="20190326 23:35:26.099"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:35:29.103" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:26.100" endtime="20190326 23:35:29.103"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_leave_Entitlements']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:29.104" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_leave_Entitlements']'.</msg>
+<status status="PASS" starttime="20190326 23:35:29.104" endtime="20190326 23:35:29.160"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:35:32.164" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:29.161" endtime="20190326 23:35:32.164"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_leave_addLeaveEntitlement']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:32.166" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_leave_addLeaveEntitlement']'.</msg>
+<status status="PASS" starttime="20190326 23:35:32.165" endtime="20190326 23:35:32.216"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_leave_addLeaveEntitlement']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:32.217" level="INFO">Clicking element 'xpath=//a[@id='menu_leave_addLeaveEntitlement']'.</msg>
+<status status="PASS" starttime="20190326 23:35:32.217" endtime="20190326 23:35:33.510"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${cur_url}</var>
+</assign>
+<msg timestamp="20190326 23:35:33.524" level="INFO">${cur_url} = https://opensource-demo.orangehrmlive.com/index.php/leave/addLeaveEntitlement</msg>
+<status status="PASS" starttime="20190326 23:35:33.512" endtime="20190326 23:35:33.524"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${cur_url}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:33.525" endtime="20190326 23:35:33.526"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:26.028" endtime="20190326 23:35:33.527" critical="yes"></status>
+</test>
+<test id="s1-t9" name="Fill Leave fourm">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='entitlements_employee_empName']</arg>
+<arg>Steven Edwards</arg>
+</arguments>
+<msg timestamp="20190326 23:35:33.531" level="INFO">Typing text 'Steven Edwards' into text field 'xpath=//input[@id='entitlements_employee_empName']'.</msg>
+<status status="PASS" starttime="20190326 23:35:33.530" endtime="20190326 23:35:33.947"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>xpath=//select[@id='entitlements_leave_type']</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:35:33.950" level="INFO">Selecting options from selection list 'xpath=//select[@id='entitlements_leave_type']' by value 3.</msg>
+<status status="PASS" starttime="20190326 23:35:33.948" endtime="20190326 23:35:34.172"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='entitlements_entitlement']</arg>
+<arg>34.99</arg>
+</arguments>
+<msg timestamp="20190326 23:35:34.174" level="INFO">Typing text '34.99' into text field 'xpath=//input[@id='entitlements_entitlement']'.</msg>
+<status status="PASS" starttime="20190326 23:35:34.173" endtime="20190326 23:35:34.471"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:35:37.488" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:34.472" endtime="20190326 23:35:37.507"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='btnSave']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:37.532" level="INFO">Clicking element 'xpath=//input[@id='btnSave']'.</msg>
+<status status="PASS" starttime="20190326 23:35:37.531" endtime="20190326 23:35:37.673"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${cur_url1}</var>
+</assign>
+<msg timestamp="20190326 23:35:37.685" level="INFO">${cur_url1} = https://opensource-demo.orangehrmlive.com/index.php/leave/addLeaveEntitlement</msg>
+<status status="PASS" starttime="20190326 23:35:37.673" endtime="20190326 23:35:37.685"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${cur_url1}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:37.686" endtime="20190326 23:35:37.688"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20190326 23:35:37.690" endtime="20190326 23:35:37.957"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:33.529" endtime="20190326 23:35:37.958" critical="yes"></status>
+</test>
+<test id="s1-t10" name="PMI Field operations">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_viewPimModule']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:37.964" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_pim_viewPimModule']'.</msg>
+<status status="PASS" starttime="20190326 23:35:37.963" endtime="20190326 23:35:38.031"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:35:41.033" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:38.031" endtime="20190326 23:35:41.034"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_Configuration']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:41.035" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_pim_Configuration']'.</msg>
+<status status="PASS" starttime="20190326 23:35:41.035" endtime="20190326 23:35:41.082"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:35:44.083" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:41.083" endtime="20190326 23:35:44.084"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_configurePim']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:44.085" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_pim_configurePim']'.</msg>
+<status status="PASS" starttime="20190326 23:35:44.084" endtime="20190326 23:35:44.130"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_configurePim']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:44.131" level="INFO">Clicking element 'xpath=//a[@id='menu_pim_configurePim']'.</msg>
+<status status="PASS" starttime="20190326 23:35:44.130" endtime="20190326 23:35:44.728"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@class='inner']</arg>
+</arguments>
+<assign>
+<var>${PIM}</var>
+</assign>
+<msg timestamp="20190326 23:35:44.809" level="INFO">${PIM} = Show Deprecated Fields
+Show Nick Name, Smoker and Military Service in Personal Details
+Country Specific Information
+Show SSN field in Personal Details
+Show SIN field in Personal Details
+Show US Tax Ex...</msg>
+<status status="PASS" starttime="20190326 23:35:44.729" endtime="20190326 23:35:44.810"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${PIM}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:35:44.810" endtime="20190326 23:35:44.811"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@name='configPim[chkShowSSN]']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:44.813" level="INFO">Clicking element 'xpath=//input[@name='configPim[chkShowSSN]']'.</msg>
+<status status="PASS" starttime="20190326 23:35:44.812" endtime="20190326 23:35:44.898"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='btnSave']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:44.899" level="INFO">Clicking element 'xpath=//input[@id='btnSave']'.</msg>
+<status status="PASS" starttime="20190326 23:35:44.898" endtime="20190326 23:35:44.967"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='btnSave']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:44.968" level="INFO">Clicking element 'xpath=//input[@id='btnSave']'.</msg>
+<status status="PASS" starttime="20190326 23:35:44.968" endtime="20190326 23:35:45.860"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:37.960" endtime="20190326 23:35:45.860" critical="yes"></status>
+</test>
+<test id="s1-t11" name="Custom Fields on PIM">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_viewPimModule']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:45.864" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_pim_viewPimModule']'.</msg>
+<status status="PASS" starttime="20190326 23:35:45.863" endtime="20190326 23:35:45.934"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:35:48.936" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:45.935" endtime="20190326 23:35:48.936"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_Configuration']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:48.937" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_pim_Configuration']'.</msg>
+<status status="PASS" starttime="20190326 23:35:48.937" endtime="20190326 23:35:48.979"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:35:51.980" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:48.979" endtime="20190326 23:35:51.981"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_listCustomFields']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:51.982" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_pim_listCustomFields']'.</msg>
+<status status="PASS" starttime="20190326 23:35:51.982" endtime="20190326 23:35:52.026"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_listCustomFields']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:52.027" level="INFO">Clicking element 'xpath=//a[@id='menu_pim_listCustomFields']'.</msg>
+<status status="PASS" starttime="20190326 23:35:52.027" endtime="20190326 23:35:53.128"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='buttonAdd']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:53.129" level="INFO">Clicking element 'xpath=//input[@id='buttonAdd']'.</msg>
+<status status="PASS" starttime="20190326 23:35:53.129" endtime="20190326 23:35:53.255"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='customField_name']</arg>
+<arg>JohnbuddyHom</arg>
+</arguments>
+<msg timestamp="20190326 23:35:53.259" level="INFO">Typing text 'JohnbuddyHom' into text field 'xpath=//input[@id='customField_name']'.</msg>
+<status status="PASS" starttime="20190326 23:35:53.256" endtime="20190326 23:35:53.534"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>xpath=//select[@id='customField_screen']</arg>
+<arg>emergency</arg>
+</arguments>
+<msg timestamp="20190326 23:35:53.535" level="INFO">Selecting options from selection list 'xpath=//select[@id='customField_screen']' by value emergency.</msg>
+<status status="PASS" starttime="20190326 23:35:53.535" endtime="20190326 23:35:53.701"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>xpath=//select[@id='customField_type']</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190326 23:35:53.703" level="INFO">Selecting options from selection list 'xpath=//select[@id='customField_type']' by value 1.</msg>
+<status status="PASS" starttime="20190326 23:35:53.702" endtime="20190326 23:35:53.861"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='customField_extra_data']</arg>
+<arg>Bavi,bawana,Man</arg>
+</arguments>
+<msg timestamp="20190326 23:35:53.863" level="INFO">Typing text 'Bavi,bawana,Man' into text field 'xpath=//input[@id='customField_extra_data']'.</msg>
+<status status="PASS" starttime="20190326 23:35:53.862" endtime="20190326 23:35:54.194"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='btnSave']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:54.195" level="INFO">Clicking element 'xpath=//input[@id='btnSave']'.</msg>
+<status status="PASS" starttime="20190326 23:35:54.195" endtime="20190326 23:35:55.175"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:35:45.861" endtime="20190326 23:35:55.176" critical="yes"></status>
+</test>
+<test id="s1-t12" name="Data Imports on PIM">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_viewPimModule']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:55.183" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_pim_viewPimModule']'.</msg>
+<status status="PASS" starttime="20190326 23:35:55.181" endtime="20190326 23:35:55.253"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:35:58.255" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:55.254" endtime="20190326 23:35:58.256"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_pim_Configuration']</arg>
+</arguments>
+<msg timestamp="20190326 23:35:58.258" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_pim_Configuration']'.</msg>
+<status status="PASS" starttime="20190326 23:35:58.257" endtime="20190326 23:35:58.307"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:36:01.309" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:35:58.308" endtime="20190326 23:36:01.310"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_admin_pimCsvImport']</arg>
+</arguments>
+<msg timestamp="20190326 23:36:01.312" level="INFO">Simulating Mouse Over on element 'xpath=//a[@id='menu_admin_pimCsvImport']'.</msg>
+<status status="PASS" starttime="20190326 23:36:01.311" endtime="20190326 23:36:01.364"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@id='menu_admin_pimCsvImport']</arg>
+</arguments>
+<msg timestamp="20190326 23:36:01.365" level="INFO">Clicking element 'xpath=//a[@id='menu_admin_pimCsvImport']'.</msg>
+<status status="PASS" starttime="20190326 23:36:01.364" endtime="20190326 23:36:02.310"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:36:05.314" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:36:02.311" endtime="20190326 23:36:05.314"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='pimCsvImport_csvFile']</arg>
+<arg>/Users/reenupanwar/Downloads/testdata.csv</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:36:05.315" endtime="20190326 23:36:05.377"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190326 23:36:08.379" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190326 23:36:05.377" endtime="20190326 23:36:08.379"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@class='inner']</arg>
+</arguments>
+<assign>
+<var>${DataImp}</var>
+</assign>
+<msg timestamp="20190326 23:36:08.448" level="INFO">${DataImp} = Select File *
+Accepts up to 1MB
+Column order should not be changed
+First Name and Last Name are compulsory
+All date fields should be in YYYY-MM-DD format
+If gender is specified, value should be either...</msg>
+<status status="PASS" starttime="20190326 23:36:08.380" endtime="20190326 23:36:08.448"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${DataImp}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 23:36:08.449" endtime="20190326 23:36:08.449"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@value='Upload']</arg>
+</arguments>
+<msg timestamp="20190326 23:36:08.450" level="INFO">Clicking element 'xpath=//input[@value='Upload']'.</msg>
+<status status="PASS" starttime="20190326 23:36:08.450" endtime="20190326 23:36:09.501"></status>
+</kw>
+<kw name="page should contain text">
+<msg timestamp="20190326 23:36:09.515" level="FAIL">No keyword with name 'page should contain text' found. Did you mean:
+    SeleniumLibrary.Page Should Contain Textfield
+    SeleniumLibrary.Page Should Contain
+    SeleniumLibrary.Page Should Contain Button
+    SeleniumLibrary.Page Should Contain List
+    SeleniumLibrary.Page Should Contain Element
+    SeleniumLibrary.Page Should Contain Image</msg>
+<status status="FAIL" starttime="20190326 23:36:09.515" endtime="20190326 23:36:09.516"></status>
+</kw>
+<status status="FAIL" starttime="20190326 23:35:55.179" endtime="20190326 23:36:09.517" critical="yes">No keyword with name 'page should contain text' found. Did you mean:
+    SeleniumLibrary.Page Should Contain Textfield
+    SeleniumLibrary.Page Should Contain
+    SeleniumLibrary.Page Should Contain Button
+    SeleniumLibrary.Page Should Contain List
+    SeleniumLibrary.Page Should Contain Element
+    SeleniumLibrary.Page Should Contain Image</status>
+</test>
+<test id="s1-t13" name="Close connections">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190326 23:36:09.524" endtime="20190326 23:36:09.689"></status>
+</kw>
+<status status="PASS" starttime="20190326 23:36:09.519" endtime="20190326 23:36:09.691" critical="yes"></status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20190326 23:34:47.510" endtime="20190326 23:36:09.698"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="12" fail="1">Critical Tests</stat>
+<stat pass="12" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="12" fail="1" id="s1" name="MainPage">MainPage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

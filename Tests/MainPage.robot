@@ -8,14 +8,33 @@ Library           ../Locators/Outside.py
 Resource          ../Varibles/resourceslib.robot
 
 *** Test Cases ***
-Open Browser
+#Open Browser
+#    Open Browser and navigate to URL
+#    ${Title}=   get title
+#    log to console  ${Title}
+#    ${URL_BeforeLogin}=     Get location
+#    log to console      ${URL_BeforeLogin}
+#    Enter Correct Username ans password
+#    ${URL_AfterLogin}=      Get location
+#    log to console      ${URL_AfterLogin}
+
+
+Invalid Username & Password
     Open Browser and navigate to URL
-    ${Title}=   get title
-    log to console  ${Title}
-    ${URL_BeforeLogin}=     Get location
-    log to console      ${URL_BeforeLogin}
+    Enter Invalid Username and Correct Password
+    Clear Fields
+    log to console  All Emepments Cleared.
+    Enter Invalid Username and Empty Password
+    Clear Fields
+    Enter Valid Username and Invalid Password
+    Clear Fields
+    Enter Valid Username and Empty Password
+    Clear Fields
     Enter Correct Username ans password
-    ${URL_AfterLogin}=      Get location
+    ${BeforeLoginTitle}  Get Title
+    log to console  Logged in successfully
+    sleep           ${Speep}
+     ${URL_AfterLogin}=      Get location
     log to console      ${URL_AfterLogin}
 
 Press Logout on main page
@@ -24,6 +43,8 @@ Press Logout on main page
    ${text_about}=   Get Text        ${About_content}
    log to console   ${text_about}
    click element    ${close_window}
+   ${curlink}=      Get location
+   log to console   ${curlink}
 
 Top Header menu option
     @{Head}     create list    Admin   PIM  Leave  Time  Recruitment   Performance  Dashboard   Directory    Maintenance
@@ -31,24 +52,32 @@ Top Header menu option
 #        Get top header elements
         log to console     ${Values}
     END
+    ${curlinkdf}=      Get location
+   log to console   ${curlinkdf}
 
 Legends option
     Main Pages Legends
     Mouse Over      ${SubunitDetails}
     ${b}=     Get Text        ${SubunitDetails}
     log to console  ${b}
+    ${curlink123}=      Get location
+    log to console   ${curlink123}
 
 
 Board Dashboard
     Main DB options
+    ${curlink1234}=      Get location
+    log to console   ${curlink1234}
 
 Assign Leave
     click element   ${AssignLeave}
     ${e}=   Get location
     log to console  ${e}
+    ${curli}=      Get location
+    log to console   ${curli}
 
 Fill Leave assign fourm
-    input text                           ${EmployeeNameAssign}         Testowy Test
+    input text                           ${EmployeeNameAssign}         Jasmine Morgan
     Select From List                     ${LeaveType}                  Vacation US
     sleep                                4
     click element                        ${LeaveBalance}
@@ -63,10 +92,79 @@ Fill Leave assign fourm
     click element                        ${SelectSpacificDate}
     input text                           ${Comment}                 Hello Sri..!!! Welcome to the ORM freetool.
     click element                        ${Assing}
+    ${curul}=      Get location
+    log to console   ${curul}
+
 
 #    click element                        ${AlertMessage}
 #    sleep                                3
 #    click element                        ${Assing}
+
+
+Leave Fourm Verification
+    mouse over      xpath=//a[@id='menu_leave_viewLeaveModule']
+    sleep           3
+    mouse over      xpath=//a[@id='menu_leave_Entitlements']
+    sleep           3
+    mouse over      xpath=//a[@id='menu_leave_addLeaveEntitlement']
+    click element   xpath=//a[@id='menu_leave_addLeaveEntitlement']
+    ${cur_url}=     get location
+    log to console      ${cur_url}
+
+Fill Leave fourm
+    input text                      xpath=//input[@id='entitlements_employee_empName']                 Steven Edwards
+    select from list by value       xpath=//select[@id='entitlements_leave_type']                       3
+    input text                      xpath=//input[@id='entitlements_entitlement']                       34.99
+    sleep                           3
+    click element                   xpath=//input[@id='btnSave']
+    ${cur_url1}=     get location
+    log to console      ${cur_url1}
+    go back
+
+PMI Field operations
+    mouse over      xpath=//a[@id='menu_pim_viewPimModule']
+    sleep           3
+    mouse over      xpath=//a[@id='menu_pim_Configuration']
+    sleep           3
+    mouse over      xpath=//a[@id='menu_pim_configurePim']
+    click element   xpath=//a[@id='menu_pim_configurePim']
+    ${PIM}=  get text        xpath=//div[@class='inner']
+    log to console       ${PIM}
+    click element   xpath=//input[@name='configPim[chkShowSSN]']
+    click element   xpath=//input[@id='btnSave']
+    click element   xpath=//input[@id='btnSave']
+
+
+
+Custom Fields on PIM
+    mouse over      xpath=//a[@id='menu_pim_viewPimModule']
+    sleep           3
+    mouse over      xpath=//a[@id='menu_pim_Configuration']
+    sleep           3
+    mouse over      xpath=//a[@id='menu_pim_listCustomFields']
+    click element   xpath=//a[@id='menu_pim_listCustomFields']
+    click element   xpath=//input[@id='buttonAdd']
+    input text      xpath=//input[@id='customField_name']       JohnbuddyHom
+    select from list by value   xpath=//select[@id='customField_screen']        emergency
+    select from list by value   xpath=//select[@id='customField_type']          1
+    input text          xpath=//input[@id='customField_extra_data']             Bavi,bawana,Man
+    click element       xpath=//input[@id='btnSave']
+
+Data Imports on PIM
+    mouse over      xpath=//a[@id='menu_pim_viewPimModule']
+    sleep           3
+    mouse over      xpath=//a[@id='menu_pim_Configuration']
+    sleep           3
+    mouse over      xpath=//a[@id='menu_admin_pimCsvImport']
+    click element   xpath=//a[@id='menu_admin_pimCsvImport']
+    sleep           3
+    choose file     xpath=//input[@id='pimCsvImport_csvFile']       /Users/reenupanwar/Downloads/testdata.csv
+     sleep           3
+    ${DataImp}=     get text    xpath=//div[@class='inner']
+    log to console      ${DataImp}
+    click element   xpath=//input[@value='Upload']
+    page should contain text
+
 
 Close connections
     close browser

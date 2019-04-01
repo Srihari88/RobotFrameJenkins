@@ -20,6 +20,7 @@ Resource          ../Varibles/resourceslib.robot
 
 
 Invalid Username & Password
+    [Tags]          Smoke
     Open Browser and navigate to URL
     Enter Invalid Username and Correct Password
     Clear Fields
@@ -238,6 +239,8 @@ Main DB options
     log to console      ${d}
 
 
+
+
 *** Variables ***
 
 ${About}                 xpath=//a[@id='aboutDisplayLink']
@@ -261,3 +264,7 @@ ${JobLeavesText}        xpath=//table/tbody
 ${Close}                xpath=//*[@id="balance_details"]/div[1]/a
 
 ${AlertMessage}         xpath=//input[@id='confirmOkButton']
+
+
+
+

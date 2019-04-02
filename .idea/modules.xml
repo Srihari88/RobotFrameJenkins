@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/RobotFrameJenkins.iml" filepath="$PROJECT_DIR$/.idea/RobotFrameJenkins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RobotFrameWork.iml" filepath="$PROJECT_DIR$/.idea/RobotFrameWork.iml" />
     </modules>
   </component>
 </project>

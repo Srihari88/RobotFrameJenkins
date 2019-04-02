@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60cf435b-1ad2-4ad4-abdc-5bf51ff3617f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/robot.run.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/AdminTab.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/AdminTab.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/log.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/metrics-20190402-000957.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/output.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/selenium-screenshot-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/selenium-screenshot-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/selenium-screenshot-3.png" beforeDir="false" />
-    </list>
+    <list default="true" id="60cf435b-1ad2-4ad4-abdc-5bf51ff3617f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/AdminTab.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="161">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding>
                 <element signature="e#0#121#0" expanded="true" />
               </folding>
@@ -168,32 +156,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RobotFrameJenkins" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RobotFrameJenkins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RobotFrameJenkins" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RobotFrameJenkins" type="462c0819:PsiDirectoryNode" />
-              <item name="KeywordsFile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RobotFrameJenkins" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RobotFrameJenkins" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RobotFrameJenkins" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RobotFrameJenkins" type="462c0819:PsiDirectoryNode" />
-              <item name="Varibles" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,7 +187,7 @@
   </component>
   <component name="RunManager" selected="Python.Valid Login User">
     <configuration name="Dictonary Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RobotFrameJenkins" />
+      <module name="RobotFrameWork" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -245,7 +208,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Open Browser" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RobotFrameJenkins" />
+      <module name="RobotFrameWork" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -266,7 +229,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Test title (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RobotFrameJenkins" />
+      <module name="RobotFrameWork" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -287,7 +250,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Valid Login User" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RobotFrameJenkins" />
+      <module name="RobotFrameWork" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -308,7 +271,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Valid Login" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RobotFrameJenkins" />
+      <module name="RobotFrameWork" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -326,6 +289,70 @@
       <option name="MODULE_MODE" value="true" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="RobotFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="RobotFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="RobotFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="RobotFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -447,7 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1554148560226</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Second commit: Small tweaks added Day-6">
+      <created>1554230368545</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1554230368546</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Second commit: Small tweaks added Day-6">
+      <created>1554230398224</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1554230398224</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -465,7 +506,7 @@
     <frame x="53" y="41" width="1604" height="888" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992764" visible="true" weight="0.16261204" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992764" visible="true" weight="0.16261204" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5014451" side_tool="true" weight="0.2063745" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -476,7 +517,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49961802" weight="0.32663316" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49961802" visible="true" weight="0.4183417" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49961802" visible="true" weight="0.4183417" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50038195" side_tool="true" weight="0.31532663" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32869786" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32894737" />
@@ -531,7 +572,8 @@
     <MESSAGE value="Second commit: Small tweaks added Day-3" />
     <MESSAGE value="Second commit: Small tweaks added Day-4" />
     <MESSAGE value="Second commit: Small tweaks added Day-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit: Small tweaks added Day-5" />
+    <MESSAGE value="Second commit: Small tweaks added Day-6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit: Small tweaks added Day-6" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/StoreValues/Locators.robot" />
@@ -712,8 +754,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/AdminTab.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="161">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding>
             <element signature="e#0#121#0" expanded="true" />
           </folding>

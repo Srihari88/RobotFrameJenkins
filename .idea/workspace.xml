@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="60cf435b-1ad2-4ad4-abdc-5bf51ff3617f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Drivers/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/robot.run.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/AdminTab.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/AdminTab.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/metrics-20190402-000957.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/selenium-screenshot-3.png" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="RobotFrameJenkins" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/AdminTab.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="e#0#121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/Dirconary.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#322#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Varibles/resourceslib.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KeywordsFile/KeywordsPage.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1764">
+              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KeywordsFile/Dashboardpage.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-602">
+              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#143#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/MySecond.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1518">
+              <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#188#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/FirstTest.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#406#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Robot Test Suite" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Leave List page</find>
+      <find>Assin Leave Page</find>
+      <find>Dashboard Pag</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Variables/Locators.robot" />
+        <option value="$PROJECT_DIR$/StoreValues/Locators.robot" />
+        <option value="$PROJECT_DIR$/Tests/practice.py" />
+        <option value="$PROJECT_DIR$/TestProject/Practice.robot" />
+        <option value="$PROJECT_DIR$/Tests/Lists.robot" />
+        <option value="$PROJECT_DIR$/TestProject/sry.py" />
+        <option value="$PROJECT_DIR$/Varibles/wert.robot" />
+        <option value="$PROJECT_DIR$/TestProject/outside.py" />
+        <option value="$PROJECT_DIR$/Locators/Excel.robot" />
+        <option value="$PROJECT_DIR$/Varibles/DashboardPagelocators.robot" />
+        <option value="$PROJECT_DIR$/Tests/FirstTest.robot" />
+        <option value="$PROJECT_DIR$/KeywordsFile/Dashboardpage.robot" />
+        <option value="$PROJECT_DIR$/TestProject/Excel.robot" />
+        <option value="$PROJECT_DIR$/TestProject/Collection.robot" />
+        <option value="$PROJECT_DIR$/KeywordsFile/KeywordsPage.robot" />
+        <option value="$PROJECT_DIR$/SeleniumElements/Elements.robot" />
+        <option value="$PROJECT_DIR$/Locators/Outside.py" />
+        <option value="$PROJECT_DIR$/Varibles/resourceslib.robot" />
+        <option value="$PROJECT_DIR$/Tests/SeleniumShortCutKeys.robot" />
+        <option value="$PROJECT_DIR$/Tests/MySecond.robot" />
+        <option value="$PROJECT_DIR$/Reports/robot.run.robot" />
+        <option value="$PROJECT_DIR$/Tests/MainPage.robot" />
+        <option value="$PROJECT_DIR$/Tests/Dirconary.robot" />
+        <option value="$PROJECT_DIR$/Tests/AdminTab.robot" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="53" />
+    <option name="y" value="41" />
+    <option name="width" value="1604" />
+    <option name="height" value="888" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RobotFrameJenkins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotFrameJenkins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RobotFrameJenkins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotFrameJenkins" type="462c0819:PsiDirectoryNode" />
+              <item name="KeywordsFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RobotFrameJenkins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotFrameJenkins" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RobotFrameJenkins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotFrameJenkins" type="462c0819:PsiDirectoryNode" />
+              <item name="Varibles" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TestProject" />
+      <recent name="$PROJECT_DIR$/Drivers" />
+      <recent name="$PROJECT_DIR$/Tests" />
+      <recent name="$PROJECT_DIR$/Locators" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Valid Login User">
+    <configuration name="Dictonary Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RobotFrameJenkins" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Dictonary Test&quot; TestProject/Collection.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Open Browser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RobotFrameJenkins" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Open Browser&quot; Tests/MainPage.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test title (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RobotFrameJenkins" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Test title&quot; Tests/SeleniumShortCutKeys.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Valid Login User" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RobotFrameJenkins" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Valid Login User&quot; Tests/Dirconary.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Valid Login" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RobotFrameJenkins" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value=" -t &quot;Valid Login&quot; Tests/MySecond.robot" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Valid Login User" />
+        <item itemvalue="Python.Valid Login" />
+        <item itemvalue="Python.Test title (1)" />
+        <item itemvalue="Python.Open Browser" />
+        <item itemvalue="Python.Dictonary Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60cf435b-1ad2-4ad4-abdc-5bf51ff3617f" name="Default Changelist" comment="" />
+      <created>1551037420033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551037420033</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First commit: Code">
+      <created>1551037654075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551037654075</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Second commit: Adding mouse over.">
+      <created>1551079890420</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551079890420</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Second commit: Added script for login with various scenarios.">
+      <created>1551124607902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551124607902</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Second commit: Added test case for the assign leave.">
+      <created>1551210883028</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551210883028</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Second commit: Setup the complete Page Object Model(Structure of the Framework)">
+      <created>1551386931515</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551386931515</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Second commit: Robot Framework Page Object model Final structure.">
+      <created>1551705512555</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1551705512556</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Second commit: Added few examples into the project.">
+      <created>1553102607556</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553102607556</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Second commit: More files added.">
+      <created>1553363031606</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553363031606</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Second commit: Small tweaks added.">
+      <created>1553510851436</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1553510851436</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Second commit: Small tweaks added.">
+      <created>1553511099734</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553511099734</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Second commit: Small tweaks added Day-2">
+      <created>1553624138774</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1553624138774</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Second commit: Small tweaks added Day-3">
+      <created>1553785765515</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553785765515</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Second commit: Small tweaks added Day-4">
+      <created>1554051491083</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1554051491083</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Second commit: Small tweaks added Day-5">
+      <created>1554148560226</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1554148560226</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_Tests - 2019.02.25 at 10h 33m 15s.xml">
+      <configuration name="Unittests in Tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Tests - 2019.03.06 at 17h 46m 54s.xml">
+      <configuration name="Unittests in Tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Tests - 2019.03.07 at 02h 14m 43s.xml">
+      <configuration name="Unittests in Tests" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="53" y="41" width="1604" height="888" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992764" visible="true" weight="0.16261204" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5014451" side_tool="true" weight="0.2063745" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3253769" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39927185" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49961802" weight="0.32663316" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49961802" visible="true" weight="0.4183417" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50038195" side_tool="true" weight="0.31532663" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32869786" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32894737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Jenkins" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992764" visible="true" weight="0.19404125" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5014451" side_tool="true" weight="0.2063745" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32566586" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39927185" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3274559" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31532663" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32869786" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32894737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Jenkins" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit: Code" />
+    <MESSAGE value="Second commit: Adding mouse over." />
+    <MESSAGE value="Second commit: Added script for login with various scenarios." />
+    <MESSAGE value="Second commit: Added test case for the assign leave." />
+    <MESSAGE value="Second commit: Setup the complete Page Object Model(Structure of the Framework)" />
+    <MESSAGE value="Second commit: Robot Framework Page Object model Final structure." />
+    <MESSAGE value="Second commit: Added few examples into the project." />
+    <MESSAGE value="Second commit: More files added." />
+    <MESSAGE value="Second commit: Small tweaks added." />
+    <MESSAGE value="Second commit: Small tweaks added Day-2" />
+    <MESSAGE value="Second commit: Small tweaks added Day-3" />
+    <MESSAGE value="Second commit: Small tweaks added Day-4" />
+    <MESSAGE value="Second commit: Small tweaks added Day-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit: Small tweaks added Day-5" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/StoreValues/Locators.robot" />
+    <entry file="file://$PROJECT_DIR$/Tests/practice.py" />
+    <entry file="file://$PROJECT_DIR$/selenium-screenshot-4.png" />
+    <entry file="file://$PROJECT_DIR$/selenium-screenshot-6.png" />
+    <entry file="file://$PROJECT_DIR$/selenium-screenshot-9.png" />
+    <entry file="file://$PROJECT_DIR$/Tests/metrics-20190228-015724.html" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/robot/libraries/BuiltIn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="2636" column="8" selection-start-line="2636" selection-start-column="8" selection-end-line="2636" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.html" />
+    <entry file="file://$PROJECT_DIR$/Tests/report.html" />
+    <entry file="file://$PROJECT_DIR$/Tests/log.html" />
+    <entry file="file://$PROJECT_DIR$/selenium-screenshot-1.png" />
+    <entry file="file://$PROJECT_DIR$/TestProject/selenium-screenshot-1.png" />
+    <entry file="file://$PROJECT_DIR$/TestProject/selenium-screenshot-2.png" />
+    <entry file="file://$PROJECT_DIR$/TestProject/selenium-screenshot-3.png" />
+    <entry file="file://$PROJECT_DIR$/TestProject/report.html" />
+    <entry file="file://$PROJECT_DIR$/Tests/Lists.robot" />
+    <entry file="file://$PROJECT_DIR$/TestProject/Practice.robot" />
+    <entry file="file://$PROJECT_DIR$/Varibles/wert.robot" />
+    <entry file="file://$PROJECT_DIR$/TestProject/sry.py" />
+    <entry file="file://$PROJECT_DIR$/TestProject/log.html" />
+    <entry file="file://$PROJECT_DIR$/Locators/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Locators/Excel.robot" />
+    <entry file="file://$PROJECT_DIR$/TestProject/Outside.py" />
+    <entry file="file://$PROJECT_DIR$/TestProject/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/SeleniumLibrary/keywords/alert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Varibles/DashboardPagelocators.robot" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/SeleniumLibrary/keywords/browsermanagement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="308" column="8" selection-start-line="308" selection-start-column="8" selection-end-line="308" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Drivers/chromedriver">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/robotemail.py" />
+    <entry file="file://$PROJECT_DIR$/SeleniumElements/Elements.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/selenium-screenshot-4.png" />
+    <entry file="file://$PROJECT_DIR$/Tests/SeleniumShortCutKeys.robot" />
+    <entry file="file://$PROJECT_DIR$/Reports/robot.run.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject/Excel.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Locators/Outside.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/metrics-20190402-000957.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestProject/Collection.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-302">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/MainPage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/MySecond.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/FirstTest.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Dirconary.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KeywordsFile/KeywordsPage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KeywordsFile/Dashboardpage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-602">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Varibles/resourceslib.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/metrics-20190402-232712.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/selenium-screenshot-1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/selenium-screenshot-2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/selenium-screenshot-3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/AdminTab.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#0#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -36,6 +36,27 @@ users Page & Add the User
     click element                            ${AddUser.Save}
 
 
+Jobs Page
+    mouse over          ${AdminPageElements.AddTab}
+    sleep               5
+    mouse over          ${Jobs.job}
+    sleep               5
+    click element       ${Jobs.JobTitle}
+    ${AdminOrange}=     Get Text       ${Jobs.DataJob}
+
+
+Add Job title
+    click element       ${Jobs.Add}
+    sleep               3
+    input text          ${Jobs.JobTi}           DataQualityEngineerS
+    input text          ${Jobs.JobDes}          I'm having the 6 years experience in software testing.
+    Choose File         ${Jobs.filepath}        /Users/reenupanwar/Desktop/Sri.jpg
+    input text          ${Jobs.Note}            hello people hope you're doing good.
+    click element       ${Jobs.JobsSave}
+    Capture Page Screenshot          ${path}/sri.png
+    log to console      Screenshot captured successfully
+
+
 
 
 
@@ -59,6 +80,19 @@ users Page & Add the User
 ...           Save=//input[@id='btnSave']
 
 
+&{Jobs}       job=menu_admin_Job
+...           JobTitle=menu_admin_viewJobTitleList
+...           DataJob=//div[@class='inner']
+...           Add=btnAdd
+...           JobTi=jobTitle_jobTitle
+...           JobDes=jobTitle_jobDescription
+...           filepath=jobTitle_jobSpec
+...           Note=jobTitle_note
+...           JobsSave=btnSave
+
+
+
+${path}                /Users/reenupanwar/Desktop/RobotFile
 #
 #${usermanagement}       id=menu_admin_UserManagement
 #${user}                 id=menu_admin_viewSystemUsers

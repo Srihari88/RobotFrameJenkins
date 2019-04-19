@@ -63,6 +63,7 @@ Read data from CSV
     ${RESULT}=   Calculate Sum From List   ${LINES}
     Log    ${RESULT}
 
+
 *** Keywords ***
 
 Split to Lines and Remove Header

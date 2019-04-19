@@ -5,6 +5,7 @@ Resource  ../Varibles/resourceslib.robot
 *** Keywords ***
 
 Open Browser and navigate to URL
+    Create Webdriver    Chrome      executable_path=/usr/local/bin/chromedriver
     open browser  ${URL}  ${Browser}
 
 Enter Invalid Username and Correct Password

@@ -6,6 +6,8 @@ Library           SeleniumLibrary
 Resource          ../KeywordsFile/KeywordsPage.robot
 Library           ../Locators/Outside.py
 Resource          ../Varibles/resourceslib.robot
+Library             OperatingSystem
+Suite Setup         Setup chromedriver
 
 *** Test Cases ***
 #Open Browser
@@ -220,6 +222,9 @@ Close connections
 
 
 *** Keywords ***
+Setup chromedriver
+  Set Environment Variable  webdriver.chrome.driver  /usr/local/bin/chromedriver
+
 Click Logout Option
     click element    ${ClickLogouttext}
 
